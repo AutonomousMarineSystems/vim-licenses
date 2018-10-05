@@ -149,3 +149,10 @@ let g:licenses_default_commands = ['gpl', 'mit', 'foobar']
 ```
 
 By default, only `:Gpl` and `:Mit` commands are available. `:Foobar` is also created for `licenses/foobar.txt`.
+
+
+Adding the following will add the license heading to new files. 
+```vim
+autocmd BufNewFile *.py,*.cpp,*.h :gpl
+```
+Of course you can specify what file extensions and license you want to use. 
